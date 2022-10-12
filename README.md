@@ -102,7 +102,6 @@ La clase principal se compila en el proyecto y se puede ejecutar con el siguient
 
 ```java
 @RestController
-@MapperScan("bg.com.bo.demoBG.dao")
 public class TestController {
 
     @Autowired
@@ -147,7 +146,8 @@ Para agreagar swwager solo añada la siguientes dependencias del siguiente [enla
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/api-docs.png"></p>
 - Tambien se podra ver el resultado asi:
 
-Se puede acceder al SWAGGER desde el siguiente [enlace](http://localhost:8080/demo-bg/api/swagger-ui/index.html).
+Se puede acceder al listado de api docs desde [enlace](Se puede acceder al listado de api docs desde [enlace](http://localhost:8080/v3/api-docs/).
+Se puede acceder al SWAGGER desde el siguiente [enlace](http://localhost:8080/v3/api-docs/).
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/swagger.png"></p>
 
 **[Ir al índice](#Índice)**
