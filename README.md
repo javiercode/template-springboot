@@ -10,7 +10,6 @@ Para iniciar una aplicación SB (SpringBoot a partir de ahora) bastará con ejec
 3. Habilitación de entorno
 4. Plantilla Springboot
 5. Primer rest
-6. Capa Persistencia Mybatis
 7. Consejos
 8. FAQs
 9. referencias
