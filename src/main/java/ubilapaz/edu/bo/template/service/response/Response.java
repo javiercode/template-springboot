@@ -1,4 +1,4 @@
-package ubilapaz.edu.bo.template.domain.dto;
+package ubilapaz.edu.bo.template.service.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,6 +11,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Response {
 //    private Integer codigo;
-    private Boolean success;
+    private Boolean success=false;
     private String mensaje;
 }
