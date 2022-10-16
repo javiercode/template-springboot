@@ -19,12 +19,22 @@ public class UserService {
     @Autowired
     private UserJpaRepository userJpaRepository;
     public Response save(UserDto userDto){
-        User user = new User();
-        user.setNombre(userDto.getNombre());
-        user.setUsername(userDto.getUsername());
-        user.setPassword(userDto.getPassword());
-        user = userJpaRepository.save(user);
-        return new Response(true,"Usuario Registrado");
+        Response respuesta = new Response(false,"Salio un error");
+
+        try{
+            User user = new User();
+            user.setNombre(userDto.getNombre());
+            user.setUsername(userDto.getUsername());
+            user.setPassword(userDto.getPassword());
+            user = userJpaRepository.save(user);
+
+            respuesta = new Response(true,"Usuario Registrado");
+        }catch (Exception e){
+
+        }
+
+
+        return respuesta;
     }
     public Response edit(Integer id, UserDto userDto){
 
@@ -48,7 +58,6 @@ public class UserService {
 
     public UserResponse listDto(){
         UserResponse userResponse = new UserResponse();
-//        List<UserDto> userList = userJpaRepository.obtenerLista();
         List<UserDto> userList = userJpaRepository.obtenerLista();
         userResponse.setMensaje("");
         userResponse.setSuccess(true);

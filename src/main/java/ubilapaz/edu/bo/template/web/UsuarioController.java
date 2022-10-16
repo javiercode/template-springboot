@@ -37,10 +37,15 @@ public class UsuarioController {
         return new ResponseEntity<Response>(reponse, HttpStatus.OK);
     }
 
+    @GetMapping("/usersDto")
+    public ResponseEntity<UserResponse> listaDto(){
+        UserResponse reponse =userService.listDto();
+        return new ResponseEntity<UserResponse>(reponse, HttpStatus.OK);
+    }
+
     @GetMapping("/users")
     public ResponseEntity<UserResponse> lista(){
-//        UserResponse reponse =userService.list();
-        UserResponse reponse =userService.listDto();
+        UserResponse reponse =userService.list();
         return new ResponseEntity<UserResponse>(reponse, HttpStatus.OK);
     }
 }
