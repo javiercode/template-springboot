@@ -147,6 +147,7 @@ Para agreagar swwager solo añada la siguientes dependencias del siguiente [enla
 - Se puede acceder al listado de api docs desde [enlace](http://localhost:8080/v3/api-docs/).
 - Se puede acceder al SWAGGER desde el siguiente [enlace](http://localhost:8080/swagger-ui.html).
 - Se puede acceder al SWAGGER con el path, click el siguiente [enlace](http://localhost:8080/apuesta/api/swagger-ui.html).
+- Se puede acceder al SWAGGER con el path en heroku, click el siguiente [enlace](https://template-springboot.herokuapp.com/apuesta/api/swagger-ui/index.html).
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/swagger.png"></p>
 
 **[Ir al índice](#Índice)**
