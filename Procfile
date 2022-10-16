@@ -1,0 +1,1 @@
+web: java -jar -Dspring.profiles.active=hk target/template-0.0.1.jar

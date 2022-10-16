@@ -10,7 +10,6 @@ Para iniciar una aplicación SB (SpringBoot a partir de ahora) bastará con ejec
 3. Habilitación de entorno
 4. Plantilla Springboot
 5. Primer rest
-6. Capa Persistencia Mybatis
 7. Consejos
 8. FAQs
 9. referencias
@@ -102,7 +101,6 @@ La clase principal se compila en el proyecto y se puede ejecutar con el siguient
 
 ```java
 @RestController
-@MapperScan("bg.com.bo.demoBG.dao")
 public class TestController {
 
     @Autowired
@@ -132,7 +130,6 @@ La estructuración típica de los ficheros de una aplicación SB con distintas c
     └── web/
         └── TestController.java
 ```
-
 Para agreagar swwager solo añada la siguientes dependencias del siguiente [enlace](https://www.baeldung.com/spring-rest-openapi-documentation)
 
 - Añada la dependencia de documentacion:
@@ -147,8 +144,29 @@ Para agreagar swwager solo añada la siguientes dependencias del siguiente [enla
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/api-docs.png"></p>
 - Tambien se podra ver el resultado asi:
 
-Se puede acceder al SWAGGER desde el siguiente [enlace](http://localhost:8080/demo-bg/api/swagger-ui/index.html).
+- Se puede acceder al listado de api docs desde [enlace](http://localhost:8080/v3/api-docs/).
+- Se puede acceder al SWAGGER desde el siguiente [enlace](http://localhost:8080/swagger-ui.html).
+- Se puede acceder al SWAGGER con el path, click el siguiente [enlace](http://localhost:8080/apuesta/api/swagger-ui.html).
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/swagger.png"></p>
+
+**[Ir al índice](#Índice)**
+
+Para agreagar conexion a bd se usa y mapear las tablas se usan la siguientes dependencias
+
+- Añada la dependencia de documentacion:
+```xml
+<dependencies>
+  <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <scope>runtime</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+  </dependency>
+</dependencies>
+```
 
 **[Ir al índice](#Índice)**
 ## FAQs
