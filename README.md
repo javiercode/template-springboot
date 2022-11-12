@@ -146,7 +146,7 @@ Para agreagar swwager solo añada la siguientes dependencias del siguiente [enla
 
 - Se puede acceder al listado de api docs desde [enlace](http://localhost:8080/v3/api-docs/).
 - Se puede acceder al SWAGGER desde el siguiente [enlace](http://localhost:8080/swagger-ui.html).
-- Se puede acceder al SWAGGER con el path, click el siguiente [enlace](http://localhost:8080/apuesta/api/swagger-ui.html).
+- Se puede acceder al SWAGGER con el path (/apuesta/api), click el siguiente [enlace](http://localhost:8080/apuesta/api/swagger-ui.html).
 - Se puede acceder al SWAGGER con el path en heroku, click el siguiente [enlace](https://template-springboot.herokuapp.com/apuesta/api/swagger-ui/index.html).
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/swagger.png"></p>
 
@@ -170,26 +170,7 @@ Para agreagar conexion a bd se usa y mapear las tablas se usan la siguientes dep
 ```
 
 **[Ir al índice](#Índice)**
-## FAQs
-### ¿Qué es Spring Boot?
-**[Ir a la descripción](#introducci%C3%B3n)**
-### ¿Qué ventajas aporta Spring Boot?
-- Reduce el el tiempo y esfuerzo en el desarrollo y testeo de aplicaciones.
-- El uso de JavaConfig ayuda en lugar del uso de XMLs.
-- Reduce el número de librerías necesarias y los conflictos entre versiones.
-- Rapided en el inicio del desarrollo gracias a las configuraciones por defecto.
-- No es necesario de un servidor web independiente.
-- Menos configuración necesaria gracias a la @Configuration.
-- El uso de perfiles (profiles) facilita el uso de configuración por entorno.
-### ¿Qué herramientas de construcción de proyectos se pueden utilizar para desarrollar una aplicación Spring Boot?
-- Maven
-- Gradle
-### ¿Qué es JavaConfig?
-Es un producto de Spring que facilita la posibilidad de realizar la configuración de la aplicación en lenguaje JAVA en lugar de mediante ficheros XML de configuración.
-Sus ventajas son:
-- Orientación a objetos de configuración (herencia, ...)
-- Reduce o elimina la configuración por XML y sus problemas en la codificación.
-- Reduce los problemas derivados de la codificación errónea de los tipos de datos en los XML.
+
 ### ¿Cómo se puede configurar una aplicación Spring Boot para que se redesplieguen los cambios automáticamente?
 Mediante el uso de DevTools:
 ```xml
@@ -198,42 +179,7 @@ Mediante el uso de DevTools:
   <artifactId>spring-boot-devtools</artifactId>
 </dependency>
 ```
-### ¿Qué papel juega el Actuator de Spring Boot?
-**[Ir a la descripción](#springboot-actuator)**
-### ¿Cómo se puede modificar el puerto de una aplicación Spring Boot?
-Incluyendo la propiedad **server.port=8090** en el fichero application.properties.
-### ¿Qué es el YAML?
-**[Ir a la descripción](#yaml-como-fichero-de-configuraci%C3%B3n)**
-### ¿Cómo se puede agregar una capa de seguridad a una aplicación de Spring Boot?
-Mediante el uso del starter **spring-boot-starter-security** y agregando la configuración de seguridad adecuada.
-### ¿Cómo se puede integrar Spring Boot y ActiveMQ?
-Mediante el uso del starter **spring-boot-starter-activemq** y la configuración de acceso al gestor de colas apropiada.
-### ¿Cómo se puede integrar Spring Boot y Kafka?
-Mediante el uso de la dependencia **spring-kafka** y la configuración de acceso al gestor de colas apropiada.
-### ¿Cómo se puede implementar la paginación y ordenación en Spring Boot?
-Se pueden crear servicios paginados y ordenados en las aplicaciones Spring Boot mediante el uso de los CrudRepository que exponen mediante servicios REST el modelo de datos asociado.
-### ¿Qué es swagger? ¿Qué papel juega en una aplicación Spring Boot?
-Swagger es un estándar de desarrollo de APIs que permiten realizar la representación visual completa de servicios RESTful.
-### ¿Qué son los perfiles en Spring? ¿Para qué se utilizan?
-Los perfiles de Spring permiten a los desarrolladores registrar diferentes beans dependiento del perfil en el que se encuentren.
-### ¿Qué es Spring Batch y cómo se integra con una aplicación Spring Boot?
-**[Ir a la descripción](#spring-batch)**
-### ¿Qué es un template de FreeMarker?
-Es un genérador de código basado en java enfocado en la generación de la capa de presentación de una aplicación con modelo MVC.
-### ¿Qué es el cacheo? ¿Cómo puede cachearse información en Spring Boot?
-La acción de cachear información consiste en almacenar en memoria local cierta información que se accede con alta frecuencia para reducir costes computacionales o de red altos. Un framework de cacheo extendido puede ser Hazelcast.
-### ¿Qué es Apache Kafka?
-Apache Kafka es un sistema de mensajería basado en el patrón publicador/suscriptor. Entre sus principales características destacan:
-- Escalable
-- Tolerante a fallos
-- Publicador - Suscriptor
-### ¿Qué componentes de Spring Cloud existen?
-Algunos de los principales componentes que forman Spring Cloud son:
-- Eureka
-- Zuul
-- Config Server
-- Ribbon
-  **[Ir al índice](#Índice)**
+
 ## Referencias
 * [Spring Boot - Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 * [Spring Boot in Action](https://doc.lagout.org/programmation/Spring%20Boot%20in%20Action.pdf)
